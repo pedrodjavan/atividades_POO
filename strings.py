@@ -30,3 +30,5 @@ else:
         print(f"{numero[:5]}-{numero[5:9]}")
     else:
         print("Num pode!")
+
+#Questao 05

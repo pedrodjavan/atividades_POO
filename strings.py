@@ -32,3 +32,16 @@ else:
         print("Num pode!")
 
 #Questao 05
+
+frase = input("Diga-me uma frase: ")
+
+quantidade_vogais = 0
+indice_vogais = []
+
+for i, letra in enumerate(frase):
+    if letra.lower() in "aeiou":
+        quantidade_vogais += 1
+        indice_vogais.append(i)
+
+print("Quantidade de vogais: ", quantidade_vogais)
+print("Índice das vogais: ", indice_vogais)

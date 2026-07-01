@@ -27,6 +27,27 @@ O pc bloqueia o site :(
                  resultado[chave] = valor
 
             return resultado
+            
+# questao 4
+
+def filtrar_dic(dados, chaves):
+    resultado = {}
+
+    for chave in chaves:
+        if chave in dados:
+            resultado[chave] = dados[chave]
+
+    return resultado
+
+dados = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e':5}
+chaves_filtradas = ['a', 'c', 'e']
+
+resultado = filtrar_dic(dados, chaves_filtradas)
+print(resultado)
+
+# questao 5
+
+
 
 
   

@@ -94,9 +94,39 @@ print("Interseção:", i)
 
 
 # questao 06 
+from random import randint
+lista = []
 
-não consegui fazer essa e questão 7 :(
+for i in range(20):
+    lista.append(randint(0, 100))
 
+print("Lista original:")
+print(lista)
+
+tamanho = int(input("Diga-me o tamanho das sublistas: "))
+
+sublistas = []
+
+for i in range(0, len(lista), tamanho):
+    sublistas.append(lista[i:i+tamanho])
+
+print("\nSublistas:")
+print(sublistas)
+
+# questao 07
+ n = int(input("Diga-me o tamanho da matriz: "))
+
+matriz = []
+
+for i in range(n):
+    linha = []
+    for j in range(n):
+        linha.append(i)
+    matriz.append(linha)
+
+print("\nMatriz:")
+for linha in matriz:
+    print(linha)
 
 
 

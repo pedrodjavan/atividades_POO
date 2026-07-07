@@ -46,7 +46,28 @@ resultado = filtrar_dic(dados, chaves_filtradas)
 print(resultado)
 
 # questao 5
+def resultado_votacao(votos):
+    resultado = {}
+    total_votos = 0
 
+    
+    for sessao in votos:
+        for candidato, quantidade in sessao.items():
+            total_votos += quantidade
+
+       for sessao in votos:
+        for candidato, quantidade in sessao.items():
+            if candidato in resultado:
+                resultado[candidato] += quantidade
+            else:
+                resultado[candidato] = quantidade
+
+    
+    for candidato in resultado:
+        percentual = (resultado[candidato] / total_votos) * 100
+        resultado[candidato] = (resultado[candidato], percentual)
+
+    return resultado
 
 
 
